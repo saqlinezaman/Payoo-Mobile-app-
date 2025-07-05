@@ -2,21 +2,19 @@ document.getElementById('cash-out-btn').
     addEventListener('click',function(event){
         event.preventDefault();
 
-    const cashout = document.getElementById('input-cash-out').value;
-    const cashoutPin = document.getElementById('input-cash-out-pin').value;
+    const cashout = getInputValueById('input-cash-out');
+    const pinNumber = getInputValueById('input-cash-out-pin');
+    console.log(cashout); 
         
     
     // check pin
     
-    if(cashoutPin === '1234' ){
+    if(pinNumber === 1234 ){
 
-        const balance = document.getElementById('balance').innerText;
-           
-            const cashOutMoneyNumber = parseFloat(cashout);
-            const balanceNumber = parseFloat(balance);
-            const minus = balanceNumber - cashOutMoneyNumber;
+        const balance = getTextFieldValueById('account-balance');
+            const minus = balance - cashout;
         
-            document.getElementById('balance').innerText = minus;
+            document.getElementById('account-balance').innerText = minus;
 
         }
         else{

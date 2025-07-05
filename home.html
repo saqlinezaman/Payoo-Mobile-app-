@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payoo Home page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
+</head>
+<body>
     <main class="flex justify-center">
-      <div class="mockup-phone border-primary">
-        <div class="camera"></div>
-        <div class="display">
-          <div class="artboard artboard-demo phone-2">
-            <!-- available balance -->
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-2">
 
-            <div class="bg-white shadow-md w-11/12 text-center rounded-md">
-              <div class="flex justify-center">
-                <h2 class="text-3xl text-lime-600 font-extrabold">$</h2>
-                <h1 id="balance" class="text-black font-bold text-3xl">10000</h1>
-              </div>
-              <h3 class="text-gray-600 font-semibold text-xl">
-                Available Balance
-              </h3>
-            </div>
-            <div class="divider mx-5"></div>
+                <!-- available balance -->
 
-            <!-- cash in cash out button -->
+                    <div class="bg-white shadow-md w-11/12 text-center rounded-md p-1">
+                        <div class="flex justify-center">
+                            <h2 class="text-3xl text-lime-600 font-extrabold">$</h2>
+                            <h1 id="account-balance" class="text-black font-bold text-3xl">1000</h1>
+                        </div>
+                        <h3 class="text-gray-600 font-semibold text-xl">Available Balance</h3>
+                    </div>
+                    <div class="divider mx-5"></div>
+                <!-- available balance end-->
 
-            <div class="flex gap-16">
-              <button id="cash-in-show" class="btn btn-outline btn-success">Cash In</button>
-              <button id="cash-out-show" class="btn btn-outline btn-error">Cash Out</button>
-            </div>
-            <div class="divider mx-5"></div>
+                <!-- all button -->
 
-            <!-- cash in form start -->
+                 <div class="flex gap-5 mt-5">
+                    <button id="cash-in-show" class="btn btn-outline btn-success">Cash In</button>
+                    <button id="cash-out-show" class="btn btn-outline btn-error">Cash Out</button>
+                    <button id="cash-out-show" class="btn btn-outline btn-primary">Transections</button>
+                </div>
+                <div class="divider mx-5"></div>
 
-            <div id="cash-in-form" class="card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+                <!-- all button end -->
+
+                <!-- cash in form start -->
+
+            <div id="cash-in-form" class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -64,7 +64,7 @@
 
             <!-- cash out form start -->
 
-            <div id="cash-out-form" class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+            <div id="cash-out-form" class="  card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -85,13 +85,14 @@
             </div>
 
             <!-- cash out form end -->
-          </div>
+                        
+                </div>
+             </div>
         </div>
-      </div>
-      <!-- js add -->
-       <script src="./js/home.js"></script>
-       <script src="./js/cashout.js"></script>
-       <script src="./js/features.js"></script>
     </main>
-  </body>
+    <!-- js -->
+     <script src="./js/librery.js"></script>
+     <script src="./js/cashin.js"></script>
+     <script src="./js/cashout.js"></script>
+</body>
 </html>
