@@ -16,8 +16,14 @@ document.getElementById('cash-in-btn').
     // get the current balance 
         
         const balance = getTextFieldValueById('account-balance');
-        const newBalance = balance + addMoneyInput ;    
+        const newBalance = balance + addMoneyInput ; 
+           
         document.getElementById('account-balance').innerText = newBalance;
+        const p = document.createElement('p');
+        p.innerText = `Cash in ${addMoneyInput} Tk. New balance is ${newBalance}`;
+
+            document.getElementById('transaction-container').appendChild(p);
+            
         }
         else{
             alert('Cash in faild');
