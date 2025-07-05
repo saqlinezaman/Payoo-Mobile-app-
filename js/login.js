@@ -13,7 +13,7 @@ document.getElementById('btn-login').
         // validate
         if(phoneNumber === '112233' && pinNumber === '1234' ){
             console.log('you are logged in');
-            window.location.href = ('/home.html');
+            window.location.href = ('./home.html');
         }
         else{
             alert('Wrong Phone Number or Pin');

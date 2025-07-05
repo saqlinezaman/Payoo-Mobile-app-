@@ -40,7 +40,7 @@
 
             <!-- cash in form start -->
 
-            <div class="card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+            <div class=" card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -59,12 +59,38 @@
                 </div>
               </form>
             </div>
+            
             <!-- cash in form end -->
+
+            <!-- cash out form start -->
+
+            <div class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input id="input-cash-out" type="text" placeholder="Enter your Amount" class="input input-bordered" required/>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input id="input-cash-out-pin" type="password" placeholder="Enter Your Pin" class="input input-bordered" autocomplete="off" required/>
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cash-out-btn" class="btn btn-error">Cash out</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- cash out form end -->
           </div>
         </div>
       </div>
       <!-- js add -->
        <script src="./js/home.js"></script>
+       <script src="./js/cashout.js"></script>
     </main>
   </body>
 </html>
