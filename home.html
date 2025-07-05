@@ -32,7 +32,7 @@
                  <div class="flex gap-5 mt-5">
                     <button id="cash-in-show" class="btn btn-outline btn-success">Cash In</button>
                     <button id="cash-out-show" class="btn btn-outline btn-error">Cash Out</button>
-                    <button id="cash-out-show" class="btn btn-outline btn-primary">Transections</button>
+                    <button id="transaction-show" class="btn btn-outline btn-primary">Transections</button>
                 </div>
                 <div class="divider mx-5"></div>
 
@@ -40,7 +40,7 @@
 
                 <!-- cash in form start -->
 
-            <div id="cash-in-form" class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+            <div id="cash-in-form" class="  card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -64,7 +64,7 @@
 
             <!-- cash out form start -->
 
-            <div id="cash-out-form" class="  card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+            <div id="cash-out-form" class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -85,6 +85,12 @@
             </div>
 
             <!-- cash out form end -->
+
+            <!-- Transaction Start -->
+               <div id="transaction-section" class=" hidden">
+                 <h2 class="text-black text-4xl font-bold border-b-2 border-black mb-3 text-center">Transactions</h2>
+               </div>
+            <!-- transaction end -->
                         
                 </div>
              </div>
@@ -94,5 +100,6 @@
      <script src="./js/librery.js"></script>
      <script src="./js/cashin.js"></script>
      <script src="./js/cashout.js"></script>
+     <script src="./js/features.js"></script>
 </body>
 </html>
