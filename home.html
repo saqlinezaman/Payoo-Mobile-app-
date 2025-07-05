@@ -33,14 +33,14 @@
             <!-- cash in cash out button -->
 
             <div class="flex gap-16">
-              <button class="btn btn-outline btn-success">Cash In</button>
-              <button class="btn btn-outline btn-error">Cash Out</button>
+              <button id="cash-in-show" class="btn btn-outline btn-success">Cash In</button>
+              <button id="cash-out-show" class="btn btn-outline btn-error">Cash Out</button>
             </div>
             <div class="divider mx-5"></div>
 
             <!-- cash in form start -->
 
-            <div class=" card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+            <div id="cash-in-form" class="card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -64,7 +64,7 @@
 
             <!-- cash out form start -->
 
-            <div class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
+            <div id="cash-out-form" class=" hidden card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl mt-10">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -91,6 +91,7 @@
       <!-- js add -->
        <script src="./js/home.js"></script>
        <script src="./js/cashout.js"></script>
+       <script src="./js/features.js"></script>
     </main>
   </body>
 </html>
